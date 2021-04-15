@@ -1,0 +1,23 @@
+
+creation
+ beforeCreate():    data properties, computed properties,methods and watchers are not processed by the component
+ created()     :    data properties, computed properties,methods and watchers can be processed by the component
+                    best place to make api call
+
+mounting      :the dom of your component needs to be modified immediately before or after the component is rendered
+beforeMount()
+mounted()     常用方法， focusing an input element when the component is rendered
+
+
+
+updating     : when a reactive property such as data or computed properties used by a component changes or the component re-renders
+beforeUpdate()  : beforeUpdate is called when the data changes but before the dom is patched
+                    it can be used to access the existing dom before an update and remove event listeners on element that might be removed 
+                    after update
+updated()      : call after dom patched.like amounted you can do dom dependent operations in this method as well
+
+
+unmounting:   
+beforeUmount() :canceling net work requests,remove manually added event listeners,cancelling subscriptions,
+                invalidate timers from setTimeOUt or setInterval
+unmounted()     

@@ -122,6 +122,19 @@
 
     <p>------------获取html，或component的参照-</p>
     <template_ref/>
+
+    <p>--------life hook-------------</p>
+    <life_hook/>
+
+    <p>----------mixin--------------</p>
+    <HoverCounter/>
+    <ClickCounter/>
+
+    <p>---------composition api replace_data_with_ref----------</p>
+    <replace_data_with_ref/>
+    <p>---------composition api replace_data_with_reactive----------</p>
+    <replace_data_with_reactive/>
+    
 </template>
 
 <script>
@@ -152,6 +165,12 @@ import Modal from './components/modal.vue'
 import post_list from './components/http/post_list.vue'
 import create_post from './components/http/create_post.vue'
 import template_ref from './components/template_ref.vue'
+import life_hook from './components/life_hook/Parent.vue'
+import HoverCounter from './components/mixin/hover_counter.vue'
+import ClickCounter from './components/mixin/click_counter.vue'
+
+import replace_data_with_ref from './components/composition_api/replace_data_with_ref.vue'
+import replace_data_with_reactive from './components/composition_api/replace_data_with_reactive.vue'
 
 
 export default {
@@ -183,7 +202,13 @@ export default {
     Modal,
     post_list,
     create_post,
-    template_ref
+    template_ref,
+    life_hook,
+    HoverCounter,
+    ClickCounter,
+    replace_data_with_ref,
+    replace_data_with_reactive
+    
   },
     data() {
         return {
